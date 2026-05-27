@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitezy - Legal & App Store Listing Center</title>
+    <meta name="description" content="Official Privacy Policy, Terms & Conditions, and Google Play Store Listing materials for Bitezy - Calorie Tracker and Nutrition helper.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Style reference -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons (Feather Icons) for polished UI elements -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="main-header">
+            <div class="logo-area">
+                <div class="logo-icon">🥗</div>
+                <div class="logo-text">
+                    <h1>Bitezy</h1>
+                    <p>Legal & App Store Publishing Suite</p>
+                </div>
+            </div>
+            <div class="theme-toggle-wrapper">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i data-feather="moon" class="toggle-icon"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <!-- SIDEBAR: Configuration & Tabs -->
+            <aside class="sidebar">
+                <!-- DYNAMIC CONFIGURATION PANEL -->
+                <div class="config-panel glass-card">
+                    <div class="panel-header">
+                        <i data-feather="sliders" class="icon-green"></i>
+                        <h3>Dynamic Variables</h3>
+                    </div>
+                    <p class="panel-desc">Customize these fields to instantly update all policies, terms, and store listings across the site.</p>
+                    
+                    <form class="config-form" id="config-form" onsubmit="event.preventDefault();">
+                        <div class="input-group">
+                            <label for="input-app-name">App Name</label>
+                            <input type="text" id="input-app-name" value="Bitezy" placeholder="e.g., Bitezy">
+                        </div>
+                        <div class="input-group">
+                            <label for="input-dev-name">Developer / Company</label>
+                            <input type="text" id="input-dev-name" value="Bitezy Team" placeholder="e.g., Bitezy App Lab">
+                        </div>
+                        <div class="input-group">
+                            <label for="input-support-email">Support Email</label>
+                            <input type="email" id="input-support-email" value="support@bitezy.app" placeholder="e.g., help@bitezy.com">
+                        </div>
+                        <div class="input-group">
+                            <label for="input-website-url">Website URL</label>
+                            <input type="url" id="input-website-url" value="https://bitezy.app" placeholder="e.g., https://bitezy.app">
+                        </div>
+                        <div class="input-group">
+                            <label for="input-effective-date">Effective Date</label>
+                            <input type="text" id="input-effective-date" value="May 28, 2026" placeholder="e.g., May 28, 2026">
+                        </div>
+                    </form>
+                </div>
+
+                <!-- NAVIGATION TABS -->
+                <nav class="nav-tabs glass-card">
+                    <div class="panel-header">
+                        <i data-feather="compass" class="icon-orange"></i>
+                        <h3>Navigation</h3>
+                    </div>
+                    <ul class="tab-list">
+                        <li class="tab-item active" data-tab="privacy-tab">
+                            <i data-feather="shield"></i>
+                            <span>Privacy Policy</span>
+                        </li>
+                        <li class="tab-item" data-tab="terms-tab">
+                            <i data-feather="file-text"></i>
+                            <span>Terms & Conditions</span>
+                        </li>
+                        <li class="tab-item" data-tab="listing-tab">
+                            <i data-feather="shopping-bag"></i>
+                            <span>Store Listings</span>
+                        </li>
+                        <li class="tab-item" data-tab="safety-tab">
+                            <i data-feather="activity"></i>
+                            <span>Data Safety Guide</span>
+                        </li>
+                        <li class="tab-item" data-tab="deploy-tab">
+                            <i data-feather="cloud-rain"></i>
+                            <span>Deployment Guide</span>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+            <!-- MAIN CONTENT AREA -->
+            <main class="content-container">
+                
+                <!-- TAB 1: PRIVACY POLICY -->
+                <section id="privacy-tab" class="tab-content active">
+                    <div class="content-header-card glass-card">
+                        <div class="title-meta">
+                            <h2>Privacy Policy</h2>
+                            <p>Required by Google Play Console for publication. Ready to copy or host.</p>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-secondary btn-copy" data-target="privacy-raw" data-type="markdown">
+                                <i data-feather="copy"></i> Copy Markdown
+                            </button>
+                            <button class="btn btn-primary btn-download" data-target="privacy-content" data-filename="privacy-policy.html">
+                                <i data-feather="download"></i> Download HTML
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="document-body glass-card" id="privacy-content">
+                        <div class="privacy-policy-document">
+                            <h1>Privacy Policy for <span class="bind-app-name">Bitezy</span></h1>
+                            <p class="meta-date">Last Updated: <span class="bind-effective-date">May 28, 2026</span></p>
+                            
+                            <p>This Privacy Policy explains how <span class="bind-dev-name">Bitezy Team</span> ("we", "us", or "our") collects, uses, discloses, and protects your information when you use <span class="bind-app-name">Bitezy</span> (the "App"), our calorie tracker and nutrition helper mobile application.</p>
+                            
+                            <p>We are committed to protecting your personal data and your privacy. By using the App, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+
+                            <hr>
+
+                            <h3>1. Information We Collect</h3>
+                            <p>To provide a tailored calorie tracking and nutrition lookup experience, <span class="bind-app-name">Bitezy</span> collects information from you in the following ways:</p>
+                            
+                            <h4>a. Health and Fitness Data (Crucial)</h4>
+                            <ul>
+                                <li><strong>Physical Profile:</strong> We may collect your age, gender, height, weight, daily activity level, and calorie/macro goals to calculate your customized baseline daily calorie budget.</li>
+                                <li><strong>Calorie and Meal Logs:</strong> We store the foods, portions, ingredients, meals, and calorie/macro values you log.</li>
+                                <li><strong>Step and Activity Tracking:</strong> With your explicit permission, the App connects with platform APIs such as <strong>Google Fit / Health Connect</strong> (or device step sensors) to retrieve your daily step counts and active calorie burn. This information is used strictly to adjust your daily calorie goals in real-time.</li>
+                            </ul>
+
+                            <h4>b. Media and Camera Access</h4>
+                            <ul>
+                                <li><strong>Food Camera Scanning:</strong> The App offers features to detect foods using your camera or uploaded images. We access your device camera and selected image gallery <strong>only</strong> when you explicitly initiate a food scan. Images are sent to secure APIs for food recognition and are not saved on our servers or shared with unauthorized third parties.</li>
+                            </ul>
+
+                            <h4>c. Account and Contact Information</h4>
+                            <ul>
+                                <li><strong>Profile Setup:</strong> If you register an account, we may collect your email address and profile name. You may also use the App entirely offline or locally, in which case this data remains solely on your local device.</li>
+                            </ul>
+
+                            <h4>d. Usage and Device Technical Data</h4>
+                            <ul>
+                                <li><strong>Device Info:</strong> We may collect basic system info (operating system version, device model, and unique device identifiers) for performance optimization and debugging.</li>
+                            </ul>
+
+                            <h3>2. How We Use Your Information</h3>
+                            <p>We use the collected information for the following purposes:</p>
+                            <ul>
+                                <li><strong>Core Functionality:</strong> To calculate your calorie budgets, store logged foods, track daily nutrition, and display your progress.</li>
+                                <li><strong>Activity Integration:</strong> To incorporate step count and active calories into your daily calorie calculations.</li>
+                                <li><strong>AI Food Detection:</strong> To process food pictures and estimate meals using secure image recognition APIs.</li>
+                                <li><strong>App Improvement:</strong> To monitor and analyze App performance, fix crashes, and optimize user experience.</li>
+                            </ul>
+
+                            <h3>3. Third-Party Services</h3>
+                            <p>To provide advanced food scanning, robust nutrition lookup databases, and operational analytics, we integrate the following third-party APIs and services. These services may collect information in accordance with their own privacy policies:</p>
+                            <ul>
+                                <li><strong>LogMeal API:</strong> Used for automated food image recognition. Images you capture are transmitted securely to LogMeal to identify dishes.</li>
+                                <li><strong>FatSecret API & OpenFoodFacts:</strong> Used to resolve generic nutritional information and packaged food barcodes. No personally identifiable profile data is shared with these nutrition providers.</li>
+                                <li><strong>Google Fit / Health Connect:</strong> Synchronizes step tracking and physical activity. Data read from Google Fit / Health Connect is processed locally to update your calories and is never uploaded to external advertising systems or data brokers.</li>
+                                <li><strong>Google Firebase & Analytics (Optional):</strong> If enabled, used for anonymous crash reports, app performance tracking, and basic usage metrics to improve stability.</li>
+                            </ul>
+
+                            <h3>4. Data Sharing and Disclosure</h3>
+                            <p>We value your trust. We do **not** sell, rent, trade, or distribute your personal health information, calorie logs, or step tracking data to third-party advertisers, data brokers, or commercial systems. We only share information under the following limited circumstances:</p>
+                            <ul>
+                                <li><strong>With Service Providers:</strong> To run the essential API calls (LogMeal, FatSecret) required to fetch nutrition stats and recognize images.</li>
+                                <li><strong>For Legal Reasons:</strong> If required to do so by applicable law, regulation, or legal process.</li>
+                            </ul>
+
+                            <h3>5. Data Security</h3>
+                            <p>The security of your data is paramount. We employ industry-standard administrative, physical, and technical safeguards (such as HTTPS encryption for all API communication) to protect your information from unauthorized access, loss, or misuse. However, please be aware that no method of transmission over the internet or mobile network is 100% secure.</p>
+
+                            <h3>6. Children's Privacy</h3>
+                            <p>Our App is **not** directed toward children under the age of 13 (or 16 in the European Union). We do not knowingly collect personal data from children. If we discover that a child under 13 has provided us with personal information, we will delete it immediately. If you are a parent or guardian and believe your child has provided us with data, please contact us immediately.</p>
+
+                            <h3>7. Data Retention and Deletion</h3>
+                            <p>If you use <span class="bind-app-name">Bitezy</span> locally without an account, your data is stored strictly on your device and will be deleted if you uninstall the App. If you created a cloud account, you can request the deletion of your account and all associated calorie, health, and profile logs at any time directly through the App settings or by emailing us at <span class="bind-support-email">support@bitezy.app</span>.</p>
+
+                            <h3>8. Changes to This Privacy Policy</h3>
+                            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this policy periodically for any changes.</p>
+
+                            <h3>9. Contact Information</h3>
+                            <p>If you have any questions or suggestions regarding this Privacy Policy, please contact us at:</p>
+                            <div class="contact-card">
+                                <strong><span class="bind-dev-name">Bitezy Team</span></strong><br>
+                                Website: <a href="#" class="bind-website-url-href" target="_blank"><span class="bind-website-url">https://bitezy.app</span></a><br>
+                                Email: <a href="#" class="bind-support-email-href"><span class="bind-support-email">support@bitezy.app</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden textarea for raw markdown copying -->
+                    <textarea id="privacy-raw" class="raw-copy-area" readonly></textarea>
+                </section>
+
+                <!-- TAB 2: TERMS & CONDITIONS -->
+                <section id="terms-tab" class="tab-content">
+                    <div class="content-header-card glass-card">
+                        <div class="title-meta">
+                            <h2>Terms & Conditions</h2>
+                            <p>Standard user agreement protecting your service, app rules, and custom database copyright.</p>
+                        </div>
+                        <div class="action-buttons">
+                            <button class="btn btn-secondary btn-copy" data-target="terms-raw" data-type="markdown">
+                                <i data-feather="copy"></i> Copy Markdown
+                            </button>
+                            <button class="btn btn-primary btn-download" data-target="terms-content" data-filename="terms-and-conditions.html">
+                                <i data-feather="download"></i> Download HTML
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="document-body glass-card" id="terms-content">
+                        <div class="terms-document">
+                            <h1>Terms & Conditions for <span class="bind-app-name">Bitezy</span></h1>
+                            <p class="meta-date">Last Updated: <span class="bind-effective-date">May 28, 2026</span></p>
+
+                            <p>Welcome to <span class="bind-app-name">Bitezy</span>! By downloading, installing, or using our mobile application (the "App"), you agree to be bound by these Terms & Conditions ("Terms"). If you do not agree to these Terms, please do not use the App.</p>
+
+                            <hr>
+
+                            <h3>1. Purpose and Disclaimer</h3>
+                            <p><strong>Bitezy is a self-tracking calorie and nutritional helper. It is not a medical application.</strong></p>
+                            <ul>
+                                <li>The content provided in the App, including nutrition budgets, food calories, suggestions, and activity analysis, is for general educational and informational purposes only.</li>
+                                <li>The App is **not** a substitute for professional medical advice, diagnosis, or treatment. Always consult with a qualified physician or nutritionist before beginning any new diet, fitness program, or weight-loss routine.</li>
+                                <li>We do not guarantee the absolute accuracy of nutrition labels, calorie estimates, or AI image detection. You are encouraged to verify calculations and food logs, especially if you have serious food allergies or health conditions.</li>
+                            </ul>
+
+                            <h3>2. Intellectual Property and Proprietary Data</h3>
+                            <p>All intellectual property rights in the App, its design, software, code, branding, and proprietary databases (including our **custom curated Indian meal nutrition dataset**) belong exclusively to <span class="bind-dev-name">Bitezy Team</span>.</p>
+                            <ul>
+                                <li>You are granted a limited, personal, non-exclusive, non-transferable, and revocable license to use the App for personal, non-commercial tracking.</li>
+                                <li>You may **not** scrape, copy, export, distribute, or reverse-engineer our proprietary Indian meal dataset or any other database incorporated within the App for commercial use or integration into third-party apps.</li>
+                            </ul>
+
+                            <h3>3. User Accounts & Responsibilities</h3>
+                            <ul>
+                                <li>If you create an account, you are responsible for maintaining the confidentiality of your login credentials and for all activities that occur under your account.</li>
+                                <li>You agree to use the App only for lawful purposes. You must not upload images or content that violate third-party copyrights, are abusive, offensive, or violate applicable laws.</li>
+                            </ul>
+
+                            <h3>4. Third-Party APIs and Content</h3>
+                            <p>Our App integrates with third-party service providers (such as LogMeal API for food recognition, OpenFoodFacts, FatSecret API, and Google Fit). Your use of these integrated services is subject to their technical limits and policies. We are not responsible for any downtime, inaccurate results, or service terminations of these third-party systems.</p>
+
+                            <h3>5. Limitation of Liability</h3>
+                            <p>To the maximum extent permitted by applicable law, <span class="bind-dev-name">Bitezy Team</span> shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, data, use, goodwill, or other intangible losses resulting from (i) your access to or use of (or inability to access or use) the App; (ii) any error, inaccuracy, or delay in nutrition or step-tracking calculations; or (iii) any health issues or medical conditions arising from your dietary changes or exercise habits while tracking with the App.</p>
+
+                            <h3>6. Termination</h3>
+                            <p>We reserve the right, in our sole discretion, to terminate or suspend your access to the App at any time, without prior notice or liability, for any reason, including if you violate these Terms.</p>
+
+                            <h3>7. Changes to These Terms</h3>
+                            <p>We reserve the right to modify or replace these Terms at any time. If a revision is material, we will provide notice in the App or update the effective date. Continuing to use the App after updates become effective means you agree to be bound by the revised Terms.</p>
+
+                            <h3>8. Contact Us</h3>
+                            <p>If you have any questions about these Terms, please contact us at:</p>
+                            <div class="contact-card">
+                                <strong><span class="bind-dev-name">Bitezy Team</span></strong><br>
+                                Email: <a href="#" class="bind-support-email-href"><span class="bind-support-email">support@bitezy.app</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Hidden textarea for raw markdown copying -->
+                    <textarea id="terms-raw" class="raw-copy-area" readonly></textarea>
+                </section>
+
+                <!-- TAB 3: PLAY STORE DESCRIPTION -->
+                <section id="listing-tab" class="tab-content">
+                    <div class="content-header-card glass-card">
+                        <div class="title-meta">
+                            <h2>Store Listings Copywriter</h2>
+                            <p>Fully written, optimized App Store copy emphasizing Bitezy's unique value props.</p>
+                        </div>
+                    </div>
+
+                    <!-- Short Description -->
+                    <div class="listing-block glass-card">
+                        <div class="listing-header">
+                            <div>
+                                <h3>Short Description (Max 80 chars)</h3>
+                                <p>Appears on the Play Store main card. Drives quick installs.</p>
+                            </div>
+                            <button class="btn btn-secondary btn-copy" data-target="desc-short" data-type="text">
+                                <i data-feather="copy"></i> Copy Text
+                            </button>
+                        </div>
+                        <div class="description-box" id="desc-short">Track Indian meals, scan food with AI & sync steps instantly. Calorie counting made easy!</div>
+                    </div>
+
+                    <!-- Long Description -->
+                    <div class="listing-block glass-card">
+                        <div class="listing-header">
+                            <div>
+                                <h3>Full Description (Max 4000 chars)</h3>
+                                <p>SEO-optimized description containing features, search keywords, and detailed app functions.</p>
+                            </div>
+                            <button class="btn btn-secondary btn-copy" data-target="desc-long" data-type="text">
+                                <i data-feather="copy"></i> Copy Text
+                            </button>
+                        </div>
+                        <div class="description-box formatted-desc" id="desc-long">
+                            <p>🍽️ <strong>Tired of calorie trackers that don't understand Indian food? Meet <span class="bind-app-name">Bitezy</span>—the smartest AI-powered calorie counter designed specifically to fit your lifestyle.</strong></p>
+
+                            <p>Whether you're trying to lose weight, gain muscle, or simply maintain a healthy lifestyle, <span class="bind-app-name">Bitezy</span> makes tracking your daily food and activities incredibly fast, easy, and accurate.</p>
+
+                            <p>🚀 <strong>KEY FEATURES:</strong></p>
+
+                            <p>📸 <strong>1. AI Food Scanner & Image Recognition</strong><br>
+                            No more tedious searching! Just snap a photo of your plate, and our state-of-the-art AI scanner instantly detects the dish, estimates portions, and populates your calories and macros in seconds. Manual confirmation is fully integrated, keeping you in complete control.</p>
+
+                            <p>🇮🇳 <strong>2. Comprehensive Indian Food Database</strong><br>
+                            Unlike other apps that list generic global foods, <span class="bind-app-name">Bitezy</span> prioritizes a custom, curated Indian meal dataset first. From Roti, Dal, and Biryani to local regional dishes, get pinpoint accurate macro details. For packaged goods, we pull instantly from OpenFoodFacts for precise barcode lookup.</p>
+
+                            <p>👣 <strong>3. Seamless Step Tracking Integration</strong><br>
+                            Connect <span class="bind-app-name">Bitezy</span> with <strong>Google Fit or Health Connect</strong> (with device step counters as a reliable fallback) to monitor your physical activity. The app dynamically adapts your daily calorie budget based on how active you are throughout the day!</p>
+
+                            <p>📊 <strong>4. Complete Macro & Nutrition Breakdown</strong><br>
+                            Keep tab on your Carbohydrates, Proteins, Fats, and essential nutrients. We integrate robust, verified global data via the FatSecret API as a backup, ensuring you have the absolute best database in your pocket.</p>
+
+                            <p>🔒 <strong>5. Privacy-First & Lightweight</strong><br>
+                            Your health data belongs to you. <span class="bind-app-name">Bitezy</span> operates securely, does not sell your details, and lets you manage or delete your records at any time. Safe, transparent, and built with trust.</p>
+
+                            <p>⭐ <strong>Why choose <span class="bind-app-name">Bitezy</span>?</strong><br>
+                            - <strong>Indian Diet Focus:</strong> Tailored for diverse Indian cuisines.<br>
+                            - <strong>Image scanning powered by LogMeal APIs:</strong> Leading visual nutrition tech.<br>
+                            - <strong>Clean & Cozy Design:</strong> Glassmorphism dashboard, intuitive charts, and no clutter.<br>
+                            - <strong>No health advice placeholders:</strong> Built on scientific formulations.</p>
+
+                            <p>Transform the way you look at your food. Download <strong><span class="bind-app-name">Bitezy</span></strong> today and take your first step towards effortless nutrition tracking!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 4: DATA SAFETY FORM ANSWERS -->
+                <section id="safety-tab" class="tab-content">
+                    <div class="content-header-card glass-card">
+                        <div class="title-meta">
+                            <h2>Google Play Console Data Safety Guide</h2>
+                            <p>A step-by-step interactive roadmap showing exactly how to answer the complex Play Store Data Safety Questionnaire.</p>
+                        </div>
+                    </div>
+
+                    <div class="safety-interactive-wrapper">
+                        <!-- Questions accordion -->
+                        <div class="safety-card glass-card">
+                            <div class="safety-question-block">
+                                <div class="badge badge-required">Required Question</div>
+                                <h3>1. Does your app collect or share any of the required user data types?</h3>
+                                <div class="console-answer">
+                                    <strong>Your Answer:</strong> <span class="ans-badge ans-yes">Yes</span>
+                                    <p>Because the app tracks calories, steps (Google Fit), profiles (weight, age), and uploads images for scan.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="safety-question-block">
+                                <div class="badge badge-required">Required Question</div>
+                                <h3>2. Is all of the user data collected by your app encrypted in transit?</h3>
+                                <div class="console-answer">
+                                    <strong>Your Answer:</strong> <span class="ans-badge ans-yes">Yes</span>
+                                    <p>All communication with APIs (LogMeal, FatSecret, backend) uses secure HTTPS protocol.</p>
+                                </div>
+                            </div>
+
+                            <div class="safety-question-block">
+                                <div class="badge badge-required">Required Question</div>
+                                <h3>3. Do you provide a way for users to request that their data be deleted?</h3>
+                                <div class="console-answer">
+                                    <strong>Your Answer:</strong> <span class="ans-badge ans-yes">Yes</span>
+                                    <p>Provide a delete option in the app settings, or let them contact your email: <span class="bind-support-email">support@bitezy.app</span>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="safety-card glass-card">
+                            <div class="safety-header">
+                                <i data-feather="database" class="icon-green"></i>
+                                <h3>Specific Data Types to Select</h3>
+                            </div>
+                            <p class="panel-desc">Check these boxes in the Google Play Console "Data Types" section:</p>
+
+                            <div class="data-type-table-wrapper">
+                                <table class="data-type-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Data Category</th>
+                                            <th>Data Type</th>
+                                            <th>Why it is collected</th>
+                                            <th>Sharing?</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Health and Fitness</strong></td>
+                                            <td>Fitness Data / Health Info</td>
+                                            <td>Step counts (Google Fit), weight, age, height, daily active calorie goals.</td>
+                                            <td><span class="badge badge-local">Collected (Not Shared)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Photos and Videos</strong></td>
+                                            <td>Photos</td>
+                                            <td>Used only if they take pictures of food to scan via LogMeal API.</td>
+                                            <td><span class="badge badge-local">Collected (Not Shared)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Personal Info</strong></td>
+                                            <td>Email address / Name</td>
+                                            <td>Used for account registration (if applicable) and backing up meal logs.</td>
+                                            <td><span class="badge badge-local">Collected (Not Shared)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>App Info and Performance</strong></td>
+                                            <td>Crash logs / Diagnostics</td>
+                                            <td>Firebase crash reporting or performance monitoring (if integrated).</td>
+                                            <td><span class="badge badge-local">Collected (Not Shared)</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 5: DEPLOYMENT GUIDE -->
+                <section id="deploy-tab" class="tab-content">
+                    <div class="content-header-card glass-card">
+                        <div class="title-meta">
+                            <h2>GitHub Pages Hosting Guide</h2>
+                            <p>Host this page completely free of charge and secure your permanent Privacy Policy URL.</p>
+                        </div>
+                    </div>
+
+                    <div class="deployment-steps">
+                        <!-- Step 1 -->
+                        <div class="deploy-card glass-card">
+                            <div class="deploy-badge">Step 1</div>
+                            <h3>Prepare the Directory</h3>
+                            <p>To enable simple hosting, we will place these web suite files in a folder called <code>docs</code> inside your main project repository, or in a separate repository.</p>
+                            <p>Files required in the folder:</p>
+                            <ul class="file-list-bullet">
+                                <li>📄 <code>index.html</code> (Main page structure)</li>
+                                <li>🎨 <code>style.css</code> (Page styles)</li>
+                                <li>⚡ <code>app.js</code> (Page interactions)</li>
+                            </ul>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="deploy-card glass-card">
+                            <div class="deploy-badge">Step 2</div>
+                            <h3>Option A: Deploy via your main repository (Easiest)</h3>
+                            <p>If you choose to keep this web asset inside your existing Android project repo:</p>
+                            <ol class="deploy-ordered-list">
+                                <li>Move this folder and rename it to <code>docs</code> directly in the root of your git project <code>D:\bitezy\docs</code>.</li>
+                                <li>Run these terminal commands to commit and push:
+                                    <pre><code>git add docs/
+git commit -m "Add privacy policy and legal center pages"
+git push origin main</code></pre>
+                                </li>
+                                <li>Go to your repository on **GitHub** -> click **Settings** -> **Pages** in the left sidebar.</li>
+                                <li>Under **Build and deployment**, set Source to **Deploy from a branch**.</li>
+                                <li>Under **Branch**, select **main** (or your default branch) and select the **`/docs`** folder from the dropdown.</li>
+                                <li>Click **Save**. GitHub will generate your URL (e.g. <code>https://your-username.github.io/bitezy/</code>) in a minute!</li>
+                            </ol>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="deploy-card glass-card">
+                            <div class="deploy-badge">Step 3</div>
+                            <h3>Option B: Deploy via a separate repository</h3>
+                            <p>If you prefer to keep this website independent of your mobile code:</p>
+                            <ol class="deploy-ordered-list">
+                                <li>Create a new public repository on GitHub named <code>bitezy-privacy-policy</code> (do NOT add a README yet).</li>
+                                <li>In a terminal, navigate to this folder <code>D:\bitezy\privacy-policy</code> and run:
+                                    <pre><code>git init
+git add .
+git commit -m "Initial commit of privacy site"
+git branch -M main
+git remote add origin https://github.com/your-username/bitezy-privacy-policy.git
+git push -u origin main</code></pre>
+                                </li>
+                                <li>Go to the repo settings on **GitHub** -> **Pages**.</li>
+                                <li>Under **Branch**, choose **main** and folder **`/ (root)`**, then click **Save**.</li>
+                                <li>Your URL will be: <code>https://your-username.github.io/bitezy-privacy-policy/</code>!</li>
+                            </ol>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="deploy-card glass-card">
+                            <div class="deploy-badge">Step 4</div>
+                            <h3>Activate in Google Play Console</h3>
+                            <p>Once GitHub Pages shows your site is live, copy the URL and paste it into these two locations in Play Console:</p>
+                            <ol class="deploy-ordered-list">
+                                <li>**App Content** -> **Privacy Policy** (Add your live URL here).</li>
+                                <li>**Store Settings** -> **Contact Details** -> **Website** (Optional, but highly recommended).</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="main-footer glass-card">
+            <p>&copy; 2026 <span class="bind-dev-name">Bitezy Team</span>. Built for <span class="bind-app-name">Bitezy</span> Calorie Tracker. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Notification Toast for feedback -->
+    <div id="toast" class="toast">
+        <i data-feather="check-circle" class="toast-icon"></i>
+        <span id="toast-message">Copied to clipboard!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
